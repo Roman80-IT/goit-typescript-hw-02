@@ -4,16 +4,26 @@
 */
 
 export enum UserRole {
-  admin = 'admin',
-  editor = 'editor',
-  guest = 'guest',
+  admin = "admin",
+  editor = "editor",
+  guest = "guest",
 }
 
-// Замініть наступний код на версію за допомогою Record
-const RoleDescription = {
-  admin: 'Admin User',
-  editor: 'Editor User',
-  guest: 'Guest User',
+//! Замініть наступний код на версію за допомогою Record
+//! Принцип роботи Record - вказуємо набір ключів K і тип T, який буде присвоєно кожному з цих ключів.
+
+// const RoleDescription = {
+//   admin: 'Admin User',
+//   editor: 'Editor User',
+//   guest: 'Guest User',
+// };
+
+type Description = Record<UserRole, string>;
+
+const RoleDescription: Description = {
+  admin: "Admin User",
+  editor: "Editor User",
+  guest: "Guest User",
 };
 
 export {};
