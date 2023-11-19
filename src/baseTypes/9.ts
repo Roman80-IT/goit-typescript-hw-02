@@ -33,7 +33,7 @@ type Pages = {
   };
 };
 
-const page1 = {
+const page1: Page = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -44,7 +44,7 @@ const page1 = {
   },
 };
 
-const page2 = {
+const page2: Pages = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
